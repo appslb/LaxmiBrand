@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="0dp"
+    android:id="@+id/itemsRow"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ItemName"
+            android:maxWidth="180dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:fontFamily="serif"
+            android:letterSpacing="0.06"
+            android:text="Item 1 "
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderItemsVarList"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:background="@color/black"/>
+</LinearLayout>
+
+

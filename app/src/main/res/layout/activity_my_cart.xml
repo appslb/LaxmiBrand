@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/basketArea"
+        android:visibility="visible"
+        android:padding="0dp">
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/ic_location_on_24"
+            android:text="\t Location Address"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_arrow_down_24"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartList"
+            android:layout_below="@id/locationText"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="125dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            android:id="@+id/placeOrderArea"
+            android:padding="5dp"
+            android:background="@color/black">
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/amountArea"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/totalAmount"
+                    android:typeface="serif"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:text="Total Amount:/nu20B9 0.0"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/totalDiscount"
+                    android:typeface="serif"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:text="Total Discount:/nu20B9 0.0"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/placeOrderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:backgroundTint="@color/primaryColor"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_cart"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/ic_cart_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Your Basket is empty"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:typeface="serif"
+            android:layout_marginTop="10dp"
+
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Explore Our selection of products and Offers" />
+
+        <TextView
+            android:id="@+id/startshopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+
+            android:padding="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Start Shopping"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

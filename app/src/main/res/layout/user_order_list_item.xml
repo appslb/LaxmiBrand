@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        android:layout_margin="10dp"
+        app:cardElevation="2dp"
+        android:id="@+id/orderCard">
+        <RelativeLayout
+            android:id="@+id/OrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id:1234"
+                android:textSize="16sp"
+                android:typeface="serif"
+                android:layout_below="@id/orderdate"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/orderdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15/7/21"
+                android:textSize="16sp"
+                android:typeface="serif"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/orderid">
+
+                    <ImageView
+                        android:id="@+id/productImage"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/newcat1"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+
+
+                    <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/orderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:textColor="@color/red"
+                        android:layout_toRightOf="@id/productImage"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        />
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/button_bg"
+                        android:text="Total Amount - Rs.1200"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/white"
+                        android:visibility="visible"/>
+
+                    <Button
+                        android:id="@+id/cancelOrderBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/button_bg"
+                        android:backgroundTint="@color/primaryColor"
+                        android:padding="10dp"
+                        android:text="Cancel Order"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/counter_bg"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/productQTY"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/primaryColor"
+                    android:hint="11"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/remove"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="0dp"
+                    android:padding="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_minus_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/referral1"
+        android:scaleType="fitXY"
+        android:id="@+id/referralImage"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/shareAppText"
+        android:layout_below="@id/referralImage"
+        android:text="Share App with others"
+        android:textAlignment="center"
+        android:lineSpacingExtra="6sp"
+        android:textColor="#41454e"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       android:id="@+id/shareAppBtn"
+        android:layout_below="@id/shareAppText"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="SHARE"
+        android:textSize="20sp"
+        android:lineSpacingExtra="6sp"
+android:foreground="?attr/selectableItemBackground"
+        android:background="@color/primaryColor"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

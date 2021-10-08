@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primaryColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/orderPlaceLayout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@color/primaryColor"
+>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/orderplace2" />
+    <TextView
+        android:id="@+id/orderPlacedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Your Order has been placed Successfully."
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/orderNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Order No : 1"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
